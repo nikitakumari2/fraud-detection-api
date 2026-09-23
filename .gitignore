@@ -1,0 +1,9 @@
+# The Kaggle CSV is ~150 MB, over GitHub's 100 MB limit; don't commit it
+creditcard.csv
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.db
+live_data.csv

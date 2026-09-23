@@ -1,0 +1,12 @@
+# Local training dependencies. Same pinned versions as serving, plus SMOTE.
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.4.1
+joblib==1.5.3
+imbalanced-learn==0.14.2
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx
+pytest

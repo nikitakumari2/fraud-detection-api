@@ -1,0 +1,13 @@
+creditcard.csv
+*.ipynb
+.git
+__pycache__/
+*.pyc
+.venv/
+venv/
+tests/
+train.py
+requirements-train.txt
+*.db
+*.png
+databricks/
