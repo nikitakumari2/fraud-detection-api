@@ -33,7 +33,7 @@ creditcard.csv → [Databricks] PySpark → Delta bronze/silver → MLflow train
 
 ## Run it
 
-### 1a. Train on Databricks (recommended)
+### 1a. Train on Databricks 
 1. In Databricks Free Edition, open **Catalog → workspace → default → Create → Volume**, name it `fraud`, and upload `creditcard.csv` to it.
 2. **Workspace → Create → Git folder**, paste this repo's URL.
 3. Run `databricks/01_etl_pyspark.py`, then `databricks/02_train_mlflow.py`.
