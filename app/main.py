@@ -22,6 +22,7 @@ import numpy as np
 import pandas as pd
 import xgboost as xgb
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, Field, create_model
 from scipy.stats import ks_2samp
 
@@ -123,10 +124,9 @@ def _score(raw: dict, explain: bool = False, actual: int | None = None,
     return result
 
 
-@app.get("/")
+@app.get("/", include_in_schema=False)
 def root():
-    return {"service": "fraud-detection-api", "docs": "/docs", "health": "/health",
-            "demo": "/demo/next?n=5", "monitoring": "/monitoring"}
+    return RedirectResponse(url="/docs")
 
 
 @app.get("/health")
