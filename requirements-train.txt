@@ -1,4 +1,3 @@
-# Local training dependencies. Same pinned versions as serving, plus SMOTE.
 numpy==2.1.3
 pandas==2.2.3
 scipy==1.17.1

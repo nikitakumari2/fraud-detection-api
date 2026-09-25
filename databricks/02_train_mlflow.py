@@ -19,7 +19,6 @@ dbutils.library.restartPython()
 import os
 import sys
 
-# Make the repo root importable (this notebook lives in <repo>/databricks/)
 REPO_ROOT = os.path.abspath("..")
 if REPO_ROOT not in sys.path:
     sys.path.insert(0, REPO_ROOT)

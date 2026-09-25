@@ -1,5 +1,3 @@
-# Serving dependencies (what the Docker image installs).
-# Versions must match the ones you train with, or the saved model may not load.
 numpy==2.1.3
 pandas==2.2.3
 scipy==1.17.1

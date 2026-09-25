@@ -5,7 +5,7 @@ Endpoints
   GET  /health          model status and offline test metrics
   POST /predict         score one transaction (add ?explain=true for top SHAP drivers)
   POST /predict/batch   score several transactions in time order
-  GET  /demo/next       replay the next held-out test transactions through the model
+  GET  /demo/next       replay the next held out test transactions through the model
   GET  /monitoring      live stats: volume, flag rate, latency, recall on replayed data, drift
   POST /reset           clear stream state and restart the demo replay
 Interactive docs at /docs
